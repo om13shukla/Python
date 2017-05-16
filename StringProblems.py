@@ -4,6 +4,7 @@ class StringProblems:
 
 
     def chk_unique_chars(self):
+        """Checks if the given String has all unique charecters"""
         temp_string = self.input_string1
         count = 0
         for c in temp_string:
@@ -16,6 +17,7 @@ class StringProblems:
         return 0
 
     def str_reverse(self):
+        """Reverses the string without using and given Libraries"""
         temp_str = ""
         for i in range(1,(len(self.input_string1)+1)):
             temp_str += self.input_string1[-i]
@@ -23,6 +25,7 @@ class StringProblems:
         print temp_str
 
     def chk_palin(self):
+        """Checks if the given string is palinidrome or Not"""
         temp_str = self.input_string1
         lenth = len(self.input_string1)
         ct = 0
@@ -37,6 +40,8 @@ class StringProblems:
             print "Its Palindrome ",temp_str
 
     def chk_perm(self):
+        """CHecks if the Second given String is a Permutation (Anagram) of
+First Given String!""" 
         str1 = raw_input("Enter string 1: ")
         str2 = raw_input("Enter string 2: ")
         
@@ -57,6 +62,8 @@ class StringProblems:
             print str2," is Not a Permation of ",str1
             
     def replace_space(self):
+        """Replaces each 'space' with '%20', Using IN-PLACE replacement:
+eg: 'the ring  ' = 'the%20ring' """
         ls1=list(self.input_string1)
         j=i=0
         
