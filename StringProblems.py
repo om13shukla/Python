@@ -80,10 +80,50 @@ eg: 'the ring  ' = 'the%20ring' """
             ls1[i+1]='2'
             ls1[i+2]='0'
             print ls1
-            
-                    
-                    
 
+    def str_comp(self):
+        str1=self.input_string1
+        ls1=[]
+        count=0
+        n=0
+        while n<(len(str1)):
+            ls1.append(str1[n])
+            count=0
+            i=n
+            while (str1[i]==str1[n]):
+                print "str1[",i,"]=",str1[i]," str1[",n,"]=",str1[n]
+                count+=1
+                i+=1
+                if i>(len(str1)-1):
+                    break
+            n=i
+            print "new n=",n
+            ls1.append(count)
+            print ls1,"\n\n"
+#
+        if (len(ls1)<len(str1)):
+            print "Final Result======\n\n\n"
+            print ls1
+        else:
+            print "Nothing much to Compress"
+            print list(str1)
+    
+        
+    def make_zero(self, arr):
+        i=j=0
+        
+        for i in range(len(arr)):
+            for j in range(len(arr[i])):
+                if (arr[i][j]==0):
+                    print "found ",arr[i][j]," at arr[",i,"][",j,"]"
+        
+        for k in range(len(arr[i])):
+            arr[i][k]=0    
+        for l in range(len(arr)):
+            arr[l][j]=0
+        for l in range(len(arr)): 
+            print arr[l]  
+                
             
             
                 
